@@ -160,8 +160,11 @@ from decouple import config # para usar o .env
 EMAIL_HOST = 'smtp.gmail.com'  # ou 'smtp.live.com' para Hotmail
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = config('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
+#EMAIL_HOST_USER = config('EMAIL_HOST_USER')
+#EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
+EMAIL_HOST_USER = 'w7eoffice2013@gmail.com'
+EMAIL_HOST_PASSWORD = 'cugz pcrn xbcv uzwz'
+
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 #-----------------------------------------------------------------------------------------------------------------
 
