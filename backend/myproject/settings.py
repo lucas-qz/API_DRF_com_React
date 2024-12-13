@@ -167,10 +167,10 @@ EMAIL_HOST_PASSWORD = 'cugz pcrn xbcv uzwz'
 
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 #-----------------------------------------------------------------------------------------------------------------
-
+ 
 
 #----- fiz dessa forma pra poder usar no portfolio na AWS
-CORS_ALLOWED_ORIGINS = ['http://localhost:5173',] # endereço do frontend 
+CORS_ALLOWED_ORIGINS = ['http://lucasqz.com.br:5173',] # endereço do frontend 
 #-----
 ACCOUNT_EMAIL_CONFIRMATION_AUTHENTICATED_REDIRECT_URL = f'{CORS_ALLOWED_ORIGINS[0]}/login/' # manda p Login do React após confirmar email
 ACCOUNT_EMAIL_CONFIRMATION_ANONYMOUS_REDIRECT_URL = f'{CORS_ALLOWED_ORIGINS[0]}/login/'     # manda p Login do React após confirmar email
