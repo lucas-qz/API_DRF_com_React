@@ -1,6 +1,5 @@
 frontend/node_modules/
 backend/venv/
-.env
 frontend/package-lock.json
 z*.txt
 z*.mhtml
