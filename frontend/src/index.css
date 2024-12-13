@@ -1,0 +1,43 @@
+.background1-div {
+    width: auto; /* Largura da div */
+    height: auto; /* Altura da div */
+    background-image: url('https://img.freepik.com/vetores-gratis/ilustracao-de-conceito-de-login-movel_114360-2650.jpg?t=st=1734034005~exp=1734037605~hmac=3ca2cee15792e11aa2d2ac43c0cbb06ce1540e060f877a3d1dcbfb712dab3343&w=740'); /* Caminho da imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a div */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+  }
+
+  .background2-div {
+    width: auto; /* Largura da div */
+    height: auto; /* Altura da div */
+    background-image: url('https://img.freepik.com/vetores-gratis/ilustracao-do-conceito-de-inscricao_114360-7885.jpg?t=st=1734033885~exp=1734037485~hmac=1320f80ffefc1b9d2793dee65e068fc0e7e4a335a43741fae40c734f718dbd97&w=740'); /* Caminho da imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a div */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+  }
+
+  .background3-div {
+    width: auto; /* Largura da div */
+    height: auto; /* Altura da div */
+    background-image: url('https://img.freepik.com/vetores-gratis/ilustracao-do-conceito-de-wireframe-movel_114360-7091.jpg?t=st=1734034257~exp=1734037857~hmac=eb0b0c8a392d6a5f35fd13419a2e3719b60b68c953102869c503d27c64885969&w=740'); /* Caminho da imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a div */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+  }
+
+.dv-1 {
+  padding: 5px 5px 5px 0px;
+  margin-top: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.dv-2 {
+    background-color: #ffe0e3;
+    color: #ff4858;
+}
+
+.dv-3 {
+  background-color: #c3f3d7;
+  color: #24ad5d;
+}

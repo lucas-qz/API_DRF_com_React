@@ -1,0 +1,10 @@
+# Ignorar a pasta venv no backend
+backend/venv/
+
+# Ignorar a pasta node_modules no frontend
+frontend/node_modules/
+
+# Ignorar arquivos temporários e desnecessários
+*.pyc
+__pycache__/
+*.env

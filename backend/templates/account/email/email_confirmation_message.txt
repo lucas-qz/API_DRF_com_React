@@ -1,0 +1,9 @@
+Olá {{ user.username }},
+
+Obrigado por se registrar em nosso site. Para ativar sua conta, clique no link abaixo:
+
+{{ activate_url }}
+
+Se você não fez esta solicitação, ignore este email.
+
+Obrigado.
