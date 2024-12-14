@@ -1,33 +1,41 @@
 ![GitHub Repo Size](https://img.shields.io/github/repo-size/lucas-qz/PortalVagasEmprego)
 
-# 👨🏻‍💼 API com DRF + React consumindo a API 👨🏻‍💼
-O objetivo desse projeto é disponibilizar uma plataforma para oferecer e buscar vagas de emprego.
-Empresas com vagas disponíveis podem cadastrar as oportunidades na plataforma.
-Pessoas em busca de oportunidades podem buscar vagas de emprego na plataforma.
-Encontrando uma vaga de interesse, o interessado pode enviar e-mail para a empresa contratante.
+# 🧑🏼‍💻 API DRF + React / Cadastro de Usuários com Ativação por E-mail
+O projeto é uma API feita em Django Rest Framework (DRF) para cadastro de usuários, consumida por um frontend em React. 
+Após cadastrar-se no sistema o usuário recebe e-mail com link para confirmação do cadastro. Ele só consegue acessar o sistema após clicar no link, garantindo dessa forma que trata-se de um e-mail válido.
 <br/><br/>
 
-## 🛠️ Funcionalidades
-- tela para cadastro de vagas.
-- home inicial para busca de vagas.
-- lista com todas as vagas disponíveis
-- página com detalhes de cada vaga.
+## 🪄 Funcionalidades
+- tela para cadastro de usuários com confirmação por e-mail
+- tela de login - só permite que usuário acesse o sistema após confirmar cadastro por e-mail
+- tela para recuperação de senha - recupera senha por e-mail
+- páginas internas da aplicação só podem ser acessadas por usuários autenticados
+
+Fluxo
+- usuário se cadastra
+- recebe e-mail pra confirmação (só consegue logar no sistema se clicar no link do e-mail)
+- clica no link do e-mail
+- faz login
+- página home só pode ser acessada por usuários autenticados
+
+Se usuário solicitar redefinição de senha
+- usuário informa seu e-mail
+- recebe e-mail 
+- clica no link
+- é redirecionado para tela de redefinição de senha (informa nova senha)
+- consegue logar com nova senha
+
 <br/>
 
-## 🔮 Implementações futuras
-1. Tela de cadastro de usuários identificando se é uma empresa ou um candidato.
-2. Relatório de visualizações de vaga para empresas.
-3. Filtro por local (cidade).
-<br/>
 
-## 📡 Tecnologias utilizadas 
+## 🚀 Tecnologias utilizadas 
 <div align="center"> 
-<img align="left" alt="Node" height="30" width="30" src="https://hopetutors.com/wp-content/uploads/2017/03/nodejs-logo-1.png">
-<img align="left" alt="Express" height="30" width="60" src="https://cdn.prod.website-files.com/6320125ace536b6ad148eca3/66502d746f57d299fe0e0c31_Image%201-Express.js.webp">
+  
+<img align="left" alt="DRF" height="30" width="30" src="https://camo.githubusercontent.com/30dc64811266b70d9aeababff3bb98cefc7f177903d49b91fecab5202ceea2df/687474703a2f2f6c75636173717a2e636f6d2e62722f7374617469632f7372632f706e672f6472662e706e67">
+  <img align="left" alt="Django" height="30" width="30" src="https://camo.githubusercontent.com/2e1c5f30ca52c89470ca2018fd68bc46e4c24bee783e03409798531fe6b05799/68747470733a2f2f7374617469632d30302e69636f6e6475636b2e636f6d2f6173736574732e30302f646a616e676f2d69636f6e2d3136303678323034382d6c776d77317a37332e706e67">
+<img align="left" alt="React" height="30" width="30" src="https://camo.githubusercontent.com/2822c17be1616affa2b8e7407ccfcea0cf3d6152f81d94a5a99fec5ffc3eeadb/68747470733a2f2f63646e312e69636f6e66696e6465722e636f6d2f646174612f69636f6e732f70726f6772616d696e672d646576656c6f706d656e742d382f32342f72656163745f6c6f676f2d3531322e706e67">
 <img align="left" alt="JavaScript" height="30" width="30" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png">
   
-<img align="left" alt="Sequelize" height="30" width="30" src="https://brandslogos.com/wp-content/uploads/images/large/sequelize-logo.png">
-<img align="left" alt="Handlebars" height="30" width="30" src="https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2017/07/handlebars-js.png?fit=500%2C500&ssl=1">
 <img align="left" alt="Bootstrap" height="30" width="40" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1280px-Bootstrap_logo.svg.png">
 <img align="left" alt="SQLite" height="30" width="50" src="https://cdn.iconscout.com/icon/free/png-256/free-sqlite-282687.png?f=webp">
 <img align="left" alt="Docker" height="30" width="30" src="https://static-00.iconduck.com/assets.00/docker-icon-2048x2048-5mc7mvtn.png">    
@@ -35,29 +43,26 @@ Encontrando uma vaga de interesse, o interessado pode enviar e-mail para a empre
 </div>
 <br/><br/>
 
-- Backend utilizando Node.js/Express.js/JavaScript
-- Sequelize como ORM para facilitar a utilização do sistema com qualquer banco relacional
-- Express Handlebars para criação de templates e comunicação de dados entre backend e frontend
-- Frontend utilizando Bootstrap, HTML, CSS, Javascript
+- API utilizando Django Rest Framework (DRF)
+- Cors para comunicação com frontend
+- Frontend utilizando React
 - Layout responsivo para utilização em Mobile
 - Docker para containerizar a aplicação na AWS facilitando a implantação do sistema
 - Banco de dados SQLite
-- Compose para facilitar a gestão do container
-- Deploy na AWS
+- Compose para facilitar a gestão dos containers
+- Deploy em instância EC2 da AWS
 <br/>
 
-## 📺 Demonstração ao Vivo
+## 🖥️ Demonstração ao Vivo
 - Acessse [Portfólio de Lucas Queiróz](http://lucasqz.com.br) para ver esse e outros projetos no ar
 <br/>
 
-## 📸 Screenshot do Sistema
-<img width="532" alt="zz" src="https://github.com/user-attachments/assets/d0bb68b2-4a32-4685-afad-b9179cb0bb61">
+## 🎞️ Screenshot do Sistema
+<img width="532" alt="zz" src="https://github.com/user-attachments/assets/99a133ba-c76f-4d1f-bdf3-73b9cb4b5a45">
 
 <br/><br/>
 
-## 🔎 Status do Projeto
-![Badge em Desenvolvimento](https://img.shields.io/badge/Status-Em%20Desenvolvimento-green)
-<br/><br/>
+
 
 ## 👨🏼 Autor - Lucas Queiróz
 <div align="left"> 
